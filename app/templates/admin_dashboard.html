@@ -9,11 +9,19 @@
         
 
     <main class="container">
-        <div class="container">
-            <h1>Admin Dashboard</h1>
-            <p>Welcome, Admin Level {{ admin_level }}</p>
+        <div class="containerb">
+            <h1>REPORT'S COMPLAINT DESK</h1>
+            
         </div>
-        <p>Here you can review reports and manage the system.</p>
+
+        
+        {% if available==0 %}
+        <div class="containerb">
+            <h2>No complaints made yet</h2>
+        </div>
+        
+        {% else %}
+        <p>it exists</p>
         <table class="styled-table">
             <thead>
                 <tr>
@@ -34,6 +42,7 @@
                 {% endfor %}
             </tbody>
         </table>
+        {% endif %}
     </main>
 </article>
 {% endblock %}

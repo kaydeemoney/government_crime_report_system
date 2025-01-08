@@ -30,7 +30,7 @@ header {
 }
 
 .logo {
-    height: 50px; /* Adjust logo height */
+    height: 100px; /* Adjust logo height */
     margin-right: 10px; /* Space between logo and text */
 }
 
@@ -158,10 +158,19 @@ footer {
 
 
 .container {
+    
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.containerb {
+
+    display: flex;
+    justify-content: center; /* Horizontally centers the div */       
+
+    
 }
 
 

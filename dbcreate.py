@@ -1,5 +1,5 @@
 from app import create_app, db
-from app.models import User, Report, Verdict
+from app.models import User, Report, ReportReview
 
 app = create_app()
 

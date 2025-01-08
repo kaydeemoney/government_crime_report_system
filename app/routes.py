@@ -130,7 +130,13 @@ def admin_dashboard():
 
     admin_level = session.get('admin_level', 0)
     reports = Report.query.all()
-    return render_template('admin_dashboard.html', admin_level=admin_level, reports=reports)
+    if reports==[]:
+        available=0
+    else:
+        available=1
+    print(available)
+    return render_template('admin_dashboard.html', admin_level=admin_level, reports=reports,
+    available=available)
 
 @main.route('/review/<int:report_id>', methods=['GET', 'POST'])
 def review_report(report_id):
