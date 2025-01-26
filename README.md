@@ -41,8 +41,10 @@ To get this project up and running, you’ll need the following installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/crime-reporting-system.git
-    cd crime-reporting-system
+    git clone https://github.com/yourusername/government_crime_report_system
+.git
+    cd government_crime_report_system
+
     ```
 
 2. Install required dependencies:
